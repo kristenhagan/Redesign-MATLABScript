@@ -9,11 +9,13 @@
 
 %User input files
 %Load files
+I = imread('image5.gif');
 
 %% Assess each image
 
 %For each image:
 %Border Detection
+[b, I_b] = BorderDetection(I);
 %Calc Size
 %Calc Assymetry
 %Calc Color Variation
