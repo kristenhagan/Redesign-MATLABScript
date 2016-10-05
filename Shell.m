@@ -37,13 +37,13 @@ for i = 1:length(files)
     %Border Detection
     [BorderXY, ImageBorder] = BorderDetection(Image);
     BorderXY = BorderXY{1};
-    BorderXY = [BorderXY(:,2) BorderXY(:,1)];
+    BorderXY = [BorderXY(:,2) BorderXY(:,1)]; %Making it XY points
     
     %Calc Size
     Area =  CalcSize(BorderXY, ImageBorder);
     
     %Calc Assymetry
-    Assymetry = CalcAssymetry(BorderXY, ImageBorder);
+    Assymetry = CalcAssymetry(BorderXY, ImageBorder, Area);
     
     %Calc Color Variation
     ColorVariation = CalcColorVariation(BorderXY, ImageBorder);

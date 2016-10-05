@@ -1,6 +1,5 @@
-function [ output_args ] = CalcSize( BorderXY, ImageBorder )
-%Code by Kristen Hagan
-
-
+function [Area] = CalcSize(~, ImageBorder )
+%Code by Thomas Leahy
+Area = sum(sum(ImageBorder));
 end
 
