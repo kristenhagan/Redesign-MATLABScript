@@ -5,7 +5,11 @@ function [ Circ ] = CalcAssymetry(BorderXY, ImageBorder, Area)
 %"Determining the asymmetry of skin lesion with fuzzy borders" (See UT Box)
 
 %% Find CIRC
-Perimeter = Length(BorderXY);
+
+% CIRC is 1 if the lesion is symmetrical or greater than 1 if it is
+% elliptical
+
+Perimeter = length(BorderXY);
 Circ = (4*pi*Area)/(Perimeter^2);
 
 %% Will's Method
@@ -21,8 +25,8 @@ for i = 1:length(BorderXY)
     dist = sqrt((xdist^2) + (ydist^2));
     
     %Did we find a new furthest point?
-    if dist > rad
-        rad = 
+    
+end
 
 end
 
