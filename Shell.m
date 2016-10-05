@@ -36,6 +36,8 @@ for i = 1:length(files)
     
     %Border Detection
     [BorderXY, ImageBorder] = BorderDetection(Image);
+    BorderXY = BorderXY{1};
+    BorderXY = [BorderXY(:,2) BorderXY(:,1)];
     
     %Calc Size
     Area =  CalcSize(BorderXY, ImageBorder);

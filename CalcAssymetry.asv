@@ -6,12 +6,7 @@ function [ output_args ] = CalcAssymetry(BorderXY, ImageBorder)
 
 %Find Centroid
 BorderXY = BorderXY{1};
-xCent = mean(BorderXY(:,1));
-yCent = mean(BorderXY(:,2));
-
-%Find Major Axes
-
-
+xCent = mean(Border(
 
 end
 
