@@ -1,6 +1,5 @@
-function [ output_args ] = CalcSize( input_args )
-%UNTITLED5 Summary of this function goes here
-%   Detailed explanation goes here
+function [ output_args ] = CalcSize( BorderXY, ImageBorder )
+%Code by Kristen Hagan
 
 
 end

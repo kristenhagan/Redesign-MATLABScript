@@ -1,6 +1,8 @@
 function [ bound,I_bin_filled] = BorderDetection( I )
-%UNTITLED2 Summary of this function goes here
-%   Detailed explanation goes here
+%Code by Mahy Hussain
+%Finds the border of a lesion image
+%Returns image and xy coordinates
+
 I_bin = imbinarize(I);
 I_bin =imcomplement(I_bin);
 I_bin_filled = imfill(I_bin,'holes');

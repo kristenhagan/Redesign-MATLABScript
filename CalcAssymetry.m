@@ -1,6 +1,7 @@
-function [ output_args ] = CalcAssymetry( input_args )
-%UNTITLED3 Summary of this function goes here
-%   Detailed explanation goes here
+function [ output_args ] = CalcAssymetry(BorderXY, ImageBorder)
+%Code by Thomas Leahy
+%Quanitifies the assymetry of the image
+
 
 
 end
