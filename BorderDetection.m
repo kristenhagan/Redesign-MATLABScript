@@ -5,7 +5,7 @@ I_bin = imbinarize(I);
 I_bin =imcomplement(I_bin);
 I_bin_filled = imfill(I_bin,'holes');
 B = bwboundaries(I_bin_filled);
-bound = B(1)
+bound = B(1);
 
 end
 
