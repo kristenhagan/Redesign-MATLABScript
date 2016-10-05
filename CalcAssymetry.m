@@ -8,9 +8,12 @@ function [ Circ ] = CalcAssymetry(BorderXY, ImageBorder, Area)
 
 % CIRC is 1 if the lesion is symmetrical or greater than 1 if it is
 % elliptical
-
 Perimeter = length(BorderXY);
 Circ = (4*pi*Area)/(Perimeter^2);
+
+%% SD Method
+
+
 
 %% Will's Method
 %Find Centroid
