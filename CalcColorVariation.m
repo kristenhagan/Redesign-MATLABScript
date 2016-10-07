@@ -9,30 +9,52 @@ function [ output_args ] = CalcColorVariation( BorderXY, ImageBorder)
 % colormap(map)
 
 colormap copper
-colorbar 
-subplot(2,3, 1)
+
+subplot(3,2, 1)
 [A,map] = imread('image1.gif');
 imagesc(A)
 
-subplot(2,3, 2)
-B = imread('image2.gif');
-imagesc(B)
+% subplot(2,3, 2)
+% B = imread('image2.gif');
+% imagesc(B)
+% 
+% subplot(2,3,3)
+% C = imread('image3.gif');
+% imagesc(C)
+% 
+% subplot(2,3, 4)
+% D = imread('image4.gif');
+% imagesc(D)
 
-subplot(2,3,3)
-C = imread('image3.gif');
-imagesc(C)
-
-subplot(2,3, 4)
-D = imread('image4.gif');
-imagesc(D)
-
-subplot(2,3, 5)
-E =imread('image5.gif');
+subplot(3,2, 2)
+E =imread('colored_lesion1.gif');
 imagesc(E)
 
-subplot(2,3,6)
-F= imread('color_lesion2.gif');
-imagesc(F)
+subplot(3,2,3)
+imshowpair(A,E, 'falsecolor')
+
+subplot(3,2,4)
+imshowpair(A,E, 'blend')
+
+subplot(3,2,5)
+imshowpair(A,E, 'diff')
+
+subplot(3,2,6)
+imshowpair(A,E, 'montage')
+
+ssim(A,E)
+
+ssim(A,A)
+% subplot(2,2,1)
+% F= imread('color_lesion2.gif');
+% imagesc(F)
+% 
+% subplot(2,2,2)
+% G= imread('color_lesion3.gif');
+% imagesc(G)
+% 
+% subplot(2,2,3)
+% imshowpair(F,G, 'diff')
 
 
 
