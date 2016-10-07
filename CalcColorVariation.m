@@ -31,7 +31,7 @@ E =imread('image5.gif');
 imagesc(E)
 
 subplot(2,3,6)
-F= imread('colored_lesion1.gif');
+F= imread('color_lesion2.gif');
 imagesc(F)
 
 
