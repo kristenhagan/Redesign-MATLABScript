@@ -2,14 +2,19 @@ function [ output_args ] = CalcColorVariation( BorderXY, ImageBorder)
 %Code by Laura Kenyon
 
 
-% images2 = uigetdir('C:\', 'Select a folder of images you want to process!');
+ %images2 = uigetdir('C:\', 'Select a folder of images you want to process!');
 % load images2
 % figure 
 % image(X)
 % colormap(map)
 
-imagesc(colormap)
 
+A = imread(colored_lesion1.gif)
+image(cdata)
+
+
+%imagesc(A)
+%colorbar
 
 %surf(peaks) %3D shaded surface plot
 %colormap default
