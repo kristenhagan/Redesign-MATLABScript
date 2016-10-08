@@ -1,7 +1,7 @@
 function [ output_args ] = CalcColorVariation( BorderXY, ImageBorder)
 %Code by Laura Kenyon
 
-
+clc;
  %images2 = uigetdir('C:\', 'Select a folder of images you want to process!');
 % load images2
 % figure 
@@ -11,7 +11,7 @@ function [ output_args ] = CalcColorVariation( BorderXY, ImageBorder)
 colormap copper
 
 subplot(3,2, 1)
-[A,map] = imread('image1.gif');
+A = imread('image1.gif');
 imagesc(A)
 
 % subplot(2,3, 2)
