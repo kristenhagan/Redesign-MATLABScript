@@ -3,7 +3,7 @@
 %MoleScope
 
 %Project Script
-
+clc; clear all; close all;
 
 %% Load Images
 
@@ -46,7 +46,7 @@ for i = 1:length(files)
     Assymetry = CalcAssymetry(BorderXY, ImageBorder, Area);
     
     %Calc Color Variation
-    ColorVariation = CalcColorVariation(BorderXY, ImageBorder);
+%    ColorVariation = CalcColorVariation(BorderXY, ImageBorder);
 end
 
 %% Time-Lapse
